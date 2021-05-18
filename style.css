@@ -1,0 +1,24 @@
+:root {
+  --grid-columns: 16;
+  --grid-rows: 16;
+}
+
+.container {
+  display: inline-grid;
+  grid-template-columns: repeat(var(--grid-columns), 2fr);
+  grid-template-rows: repeat(var(--grid-rows), 2fr);
+  padding: 0px;
+  border: 5px solid black;
+  height: 575px;
+  width: 575px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.color {
+  background-color: gray;
+  border: 1px solid black;
+}
